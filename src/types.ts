@@ -20,6 +20,12 @@ export type UserIntegrationConfig = {
    * for web app findings and host detections.
    */
   minFindingsSinceDays: number;
+
+  /**
+   * The severities to use when searching for host detections, used to limit
+   * data fetched to only severities a security team wants to ingest.
+   */
+  vmdrFindingSeverities?: number[];
 };
 
 export type CalculatedIntegrationConfig = UserIntegrationConfig & {

@@ -55,17 +55,12 @@ const instanceConfigFields: IntegrationInstanceConfigFieldMap = {
 
   /**
    * Adds host detections request filter parameter `"severities"`.
-   *
-   * Uncommenting this setting will have no effect without code changes; it's
-   * here for documenation.
-   *
-   * TODO: Request only selected severities, "3,4,5"
    */
-  // vmdrFindingSeverities: {
-  //   type: 'string',
-  //   // options: [1,2,3,4,5]
-  //   // defaultValue: [3,4,5]
-  // },
+  vmdrFindingSeverities: {
+    type: 'string',
+    // options: [1,2,3,4,5]
+    // defaultValue: [3,4,5]
+  },
 
   /**
    * The integration runs with the default behavior of the detections endpoint,
